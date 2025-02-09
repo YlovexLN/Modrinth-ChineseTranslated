@@ -1,0 +1,74 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-changelog:
+    name: Generate changelog
+    runs-on: ubuntu-latest
+    outputs:
+      release_body: ${{ steps.git-cliff.outputs.content }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate a changelog
+        uses: orhun/git-cliff-action@v4
+        id: git-cliff
+        with:
+          config: cliff.toml
+          args: -vv --latest --strip header
+        env:
+          OUTPUT: CHANGES.md
+
+  create-release:
+    needs: generate-changelog
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Upload script.user.js as an artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: script.user.js
+          path: script.user.js
+
+      - name: Download script.user.js artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: script.user.js
+          path: .
+
+      - name: Get latest tag
+        id: get_latest_tag
+        run: |
+          echo "LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))" >> $GITHUB_ENV
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          body: ${{ needs.generate-changelog.outputs.release_body }}
+          draft: false
+          prerelease: false
+
+      - name: Upload script.user.js to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./script.user.js
+          asset_name: script.user.js
+          asset_content_type: application/javascript

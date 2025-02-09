@@ -7,9 +7,11 @@
 // @match        https://modrinth.com/*
 // @grant        none
 // @license      GPL-3.0
+// @downloadURL https://update.greasyfork.org/scripts/526366/Modrinth-ChineseTranslated.user.js
+// @updateURL https://update.greasyfork.org/scripts/526366/Modrinth-ChineseTranslated.meta.js
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     // 翻译词典
@@ -21,11 +23,11 @@
         'New project': '新建项目',
         'New collection': '新建收藏夹',
         'New organization': '新建组织',
-        'The place for Minecraft mods plugins data packs shaders resource packs modpacks': 'Minecraft 模组、插件、数据包、着色器、资源包和模组包的家园',
+        'The place for Minecraft mods plugins data packs shaders resource packs modpacks': 'Minecraft 模组、插件、数据包、光影包、资源包和模组包的家园',
         'mods': '模组',
         'plugins': '插件',
         'data packs': '数据包',
-        'shaders': '着色器',
+        'shaders': '光影包',
         'resource packs': '资源包',
         'modpacks': '模组包',
         'servers': '服务器',
@@ -265,7 +267,7 @@
         'Load more': '加载更多',
 
 
-};
+    };
 
     // 遍历页面内容并替换为翻译
     const translateText = (node) => {

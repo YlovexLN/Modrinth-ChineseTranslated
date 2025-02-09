@@ -1,0 +1,32 @@
+name: Check Code Format
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: |
+          npm install prettier markdownlint-cli --save-dev
+
+      - name: Run Prettier Check
+        run: npx prettier --check script.user.js
+
+      - name: Run Markdownlint Check
+        run: npx markdownlint README.md
