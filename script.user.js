@@ -6,7 +6,7 @@
 // @author       YlovexLN
 // @match        https://modrinth.com/*
 // @grant        none
-// @license      GPLv3
+// @license      GPL-3.0
 // ==/UserScript==
 
 (function() {
