@@ -11,11 +11,28 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       release_body: ${{ steps.git-cliff.outputs.content }}
+      new_version: ${{ steps.get_new_version.outputs.new_version }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Get latest tag
+        id: get_latest_tag
+        run: |
+          LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
+          echo "LATEST_TAG=${LATEST_TAG}" >> $GITHUB_ENV
+
+      - name: Calculate new version
+        id: get_new_version
+        run: |
+          MAJOR=$(echo $LATEST_TAG | cut -d'.' -f1 | tr -cd '[:digit:]')
+          MINOR=$(echo $LATEST_TAG | cut -d'.' -f2 | tr -cd '[:digit:]')
+          PATCH=$(echo $LATEST_TAG | cut -d'.' -f3 | tr -cd '[:digit:]')
+          NEW_PATCH=$((PATCH + 1))
+          NEW_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
+          echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
 
       - name: Generate a changelog
         uses: orhun/git-cliff-action@v4
@@ -46,19 +63,14 @@ jobs:
           name: script.user.js
           path: .
 
-      - name: Get latest tag
-        id: get_latest_tag
-        run: |
-          echo "LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))" >> $GITHUB_ENV
-
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.YLOVEXLN_WORKFLOWS }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref_name }}
-          release_name: Release ${{ github.ref_name }}
+          tag_name: v${{ needs.generate-changelog.outputs.new_version }}
+          release_name: Release v${{ needs.generate-changelog.outputs.new_version }}
           body: ${{ needs.generate-changelog.outputs.release_body }}
           draft: false
           prerelease: false
@@ -66,12 +78,9 @@ jobs:
       - name: Upload script.user.js to release
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.YLOVEXLN_WORKFLOWS }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./script.user.js
           asset_name: script.user.js
           asset_content_type: application/javascript
-
-
-
