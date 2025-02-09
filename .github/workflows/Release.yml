@@ -22,11 +22,12 @@ jobs:
         id: get_new_version
         run: |
           LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1) || echo "v0.0.0")
-          MAJOR=$(echo $LATEST_TAG | cut -d'.' -f1 | tr -cd '[:digit:]')
-          MINOR=$(echo $LATEST_TAG | cut -d'.' -f2 | tr -cd '[:digit:]')
-          PATCH=$(echo $LATEST_TAG | cut -d'.' -f3 | tr -cd '[:digit:]')
+          MAJOR=$(echo $LATEST_TAG | cut -d'.' -f2 | tr -cd '[:digit:]')
+          MINOR=$(echo $LATEST_TAG | cut -d'.' -f3 | tr -cd '[:digit:]')
+          PATCH=$(echo $LATEST_TAG | cut -d'.' -f4 | tr -cd '[:digit:]')
+          if [ -z "$PATCH" ]; then PATCH=0; fi
           NEW_PATCH=$((PATCH + 1))
-          NEW_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
+          NEW_VERSION="v0.$MINOR.$NEW_PATCH"
           echo "::set-output name=new_version::$NEW_VERSION"
 
       - name: Generate a changelog
@@ -64,8 +65,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ needs.generate-changelog.outputs.new_version }}
-          release_name: Release v${{ needs.generate-changelog.outputs.new_version }}
+          tag_name: ${{ needs.generate-changelog.outputs.new_version }}
+          release_name: Release ${{ needs.generate-changelog.outputs.new_version }}
           body: ${{ needs.generate-changelog.outputs.release_body }}
           draft: false
           prerelease: false
@@ -81,4 +82,4 @@ jobs:
           asset_content_type: application/javascript
 
 
-          
+
