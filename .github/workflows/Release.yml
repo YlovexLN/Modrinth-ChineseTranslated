@@ -55,7 +55,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ YlovexLN.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ YLOVEXLN_WORKFLOWS.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref_name }}
           release_name: Release ${{ github.ref_name }}
@@ -66,7 +66,7 @@ jobs:
       - name: Upload script.user.js to release
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ YlovexLN.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ YLOVEXLN_WORKFLOWS.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./script.user.js
