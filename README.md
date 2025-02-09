@@ -1,10 +1,10 @@
 # Modrinth-ChineseTranslated
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/YlovexLN/Modrinth-ChineseTranslated)
-[![Tampermonkey](https://img.shields.io/badge/Tampermonkey-Get%20Extension-blue?logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github&labelColor=000000&color=%23555555)](https://github.com/YlovexLN/Modrinth-ChineseTranslated)
+[![Tampermonkey](https://img.shields.io/badge/Tampermonkey-Get%20Extension-blue?logo=tampermonkey&logoColor=white&color=darkgreen)](https://www.tampermonkey.net/)
 [![Violentmonkey](https://img.shields.io/badge/Violentmonkey-Get%20Extension-orange?logo=violentmonkey&logoColor=white)](https://violentmonkey.github.io/)
 [![License](https://img.shields.io/badge/License-GPL3.0-green.svg)](LICENSE)
-[![Greasy Fork Downloads](https://img.shields.io/greasyfork/dt/526366)](https://greasyfork.org/zh-CN/scripts/526366-modrinth-chinesetranslated)
+[![GreasyFork Downloads](https://img.shields.io/greasyfork/dt/526366?label=GreasyFork%20Downloads&color=orange)](https://greasyfork.org/zh-CN/scripts/526366-modrinth-chinesetranslated)
 
 Modrinth-ChineseTranslated 是一个用于Ai翻译汉化 Modrinth 网页的用户脚本。
 
