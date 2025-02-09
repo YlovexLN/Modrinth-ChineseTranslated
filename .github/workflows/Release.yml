@@ -11,26 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       release_body: ${{ steps.git-cliff.outputs.content }}
-      new_version: ${{ steps.get_new_version.outputs.new_version }}
-    permissions:
-      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Get latest tag and increment version
-        id: get_new_version
-        run: |
-          LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1) || echo "v0.0.0")
-          MAJOR=$(echo $LATEST_TAG | cut -d'.' -f2 | tr -cd '[:digit:]')
-          MINOR=$(echo $LATEST_TAG | cut -d'.' -f3 | tr -cd '[:digit:]')
-          PATCH=$(echo $LATEST_TAG | cut -d'.' -f4 | tr -cd '[:digit:]')
-          if [ -z "$PATCH" ]; then PATCH=0; fi
-          NEW_PATCH=$((PATCH + 1))
-          NEW_VERSION="v0.$MINOR.$NEW_PATCH"
-          echo "::set-output name=new_version::$NEW_VERSION"
 
       - name: Generate a changelog
         uses: orhun/git-cliff-action@v4
@@ -45,8 +30,6 @@ jobs:
     needs: generate-changelog
     name: Create Release
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -63,14 +46,18 @@ jobs:
           name: script.user.js
           path: .
 
+      - name: Get latest tag
+        id: get_latest_tag
+        run: |
+          echo "LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))" >> $GITHUB_ENV
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.YLOVEXLN_WORKFLOWS }}
         with:
-          tag_name: ${{ needs.generate-changelog.outputs.new_version }}
-          release_name: Release ${{ needs.generate-changelog.outputs.new_version }}
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
           body: ${{ needs.generate-changelog.outputs.release_body }}
           draft: false
           prerelease: false
@@ -84,6 +71,3 @@ jobs:
           asset_path: ./script.user.js
           asset_name: script.user.js
           asset_content_type: application/javascript
-
-
-
