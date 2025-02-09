@@ -84,3 +84,6 @@ jobs:
           asset_path: ./script.user.js
           asset_name: script.user.js
           asset_content_type: application/javascript
+
+
+
