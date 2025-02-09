@@ -1,4 +1,4 @@
-name: Check
+name: Check Code Format
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'  # 使用 Node.js 16
 
       - name: Install dependencies
         run: |
