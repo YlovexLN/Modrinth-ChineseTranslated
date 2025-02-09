@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Modrinth-ChineseTranslated
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.3
 // @description  一个汉化Modrinth网页的的脚本，将 Modrinth 网站的内容翻译成中文。
 // @author       YlovexLN
 // @match        https://modrinth.com/*
@@ -9,6 +9,7 @@
 // @license      GPL-3.0
 // @downloadURL https://update.greasyfork.org/scripts/526366/Modrinth-ChineseTranslated.user.js
 // @updateURL https://update.greasyfork.org/scripts/526366/Modrinth-ChineseTranslated.meta.js
+// @supportURL https://github.com/YlovexLN/Modrinth-ChineseTranslated/issues
 // ==/UserScript==
 
 (function () {
