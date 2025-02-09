@@ -1,4 +1,4 @@
-name: Create Release
+name: Release
 
 on:
   push:
@@ -35,13 +35,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Upload script.user.js as an artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: script.user.js
           path: script.user.js
 
       - name: Download script.user.js artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: script.user.js
           path: .
