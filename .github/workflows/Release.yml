@@ -2,11 +2,11 @@ name: Release
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*"
 
 jobs:
-  generate-changelog:
+  changelog:
     name: Generate changelog
     runs-on: ubuntu-latest
     outputs:
@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate a changelog
+      - name: Generate changelog
         uses: orhun/git-cliff-action@v4
         id: git-cliff
         with:
@@ -25,49 +25,33 @@ jobs:
           args: -vv --latest --strip header
         env:
           OUTPUT: CHANGES.md
+          GITHUB_REPO: ${{ github.repository }}
 
-  create-release:
-    needs: generate-changelog
+  release:
     name: Create Release
+    needs: changelog
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Upload script.user.js as an artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: script.user.js
-          path: script.user.js
-
-      - name: Download script.user.js artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: script.user.js
-          path: .
-
-      - name: Get latest tag
-        id: get_latest_tag
-        run: |
-          echo "LATEST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))" >> $GITHUB_ENV
       - name: Create Release
-        id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.YLOVEXLN_WORKFLOWS }}
         with:
-          tag_name: ${{ github.ref_name }}
+          tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref_name }}
-          body: ${{ needs.generate-changelog.outputs.release_body }}
+          body: ${{ needs.changelog.outputs.release_body }}
           draft: false
           prerelease: false
 
-      - name: Upload script.user.js to release
+      - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.YLOVEXLN_WORKFLOWS }}
         with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          upload_url: ${{ env.UPLOAD_URL }}
           asset_path: ./script.user.js
           asset_name: script.user.js
-          asset_content_type: application/javascript
+          asset_content_type: text/javascript
