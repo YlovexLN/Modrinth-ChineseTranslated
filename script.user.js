@@ -19,7 +19,6 @@
   const translations = {
     "Discover content": "发现内容",
     "Host a server": "托管服务器",
-    "Get Modrinth App": "获取 Modrinth 应用",
     "Modrinth App": "Modrinth 应用",
     "New project": "新建项目",
     "New collection": "新建收藏夹",
@@ -58,6 +57,12 @@
     "Find what you want, quickly and easily": "快速轻松地找到你想找的内容",
     "Modrinth's lightning-fast search and powerful filters let you find what you want as you type.":
       "Modrinth 的超快搜索和强大的筛选功能让你在输入时就能找到想要的内容。",
+    "Sort by": "排序",
+    Relevance: "相关性",
+    Downloads: "下载量",
+    Follows: "关注数",
+    Updated: "更新时间",
+    Newest: "最新",
     "Follow projects you love": "关注你喜欢的项目",
     "Get notified every time your favorite projects update and stay in the loop":
       "每次你关注的项目更新时都会收到通知，不错过任何动态",
@@ -102,10 +107,7 @@
     Docs: "文档",
     Status: "状态",
     Interact: "互动",
-    Discord: "Discord",
     "X (Twitter)": "X (推特)",
-    Mastodon: "Mastodon",
-    Crowdin: "Crowdin",
     "Get Modrinth App": "获取 Modrinth 应用",
     "Change theme": "更改主题",
     "NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.":
@@ -133,7 +135,6 @@
     Documentation: "文档",
     "Terms of Service": "服务条款",
     "Privacy Policy": "隐私政策",
-    "Sort by": "排序方式",
     Categories: "分类",
     Trending: "趋势",
     "Featured Packs": "精选包",
