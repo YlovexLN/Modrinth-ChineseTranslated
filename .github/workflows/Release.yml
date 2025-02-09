@@ -12,6 +12,8 @@ jobs:
     outputs:
       release_body: ${{ steps.git-cliff.outputs.content }}
       new_version: ${{ steps.get_new_version.outputs.new_version }}
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,6 +45,8 @@ jobs:
     needs: generate-changelog
     name: Create Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -63,7 +67,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.YLOVEXLN_WORKFLOWS }}
         with:
           tag_name: ${{ needs.generate-changelog.outputs.new_version }}
           release_name: Release ${{ needs.generate-changelog.outputs.new_version }}
@@ -74,7 +78,7 @@ jobs:
       - name: Upload script.user.js to release
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.YLOVEXLN_WORKFLOWS }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./script.user.js
