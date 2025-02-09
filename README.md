@@ -4,29 +4,24 @@
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-Get%20Extension-blue?logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
 [![Violentmonkey](https://img.shields.io/badge/Violentmonkey-Get%20Extension-orange?logo=violentmonkey&logoColor=white)](https://violentmonkey.github.io/)
 [![License](https://img.shields.io/badge/License-GPL3.0-green.svg)](LICENSE)
-[![Greasy Fork Downloads](https://img.shields.io/badge/GreasyFork-Script-blue?&label=Downloads&logo=greasyfork)](https://greasyfork.org/zh-CN/scripts/526366-modrinth-chinesetranslated)
+[![Greasy Fork Downloads](https://img.shields.io/greasyfork/dm/code/526366-modrinth-chinesetranslated?label=Downloads&logo=greasyfork)](https://greasyfork.org/zh-CN/scripts/526366-modrinth-chinesetranslated)
 
-Modrinth-ChineseTranslated 是一个用Ai翻译汉化 Modrinth 网页的用户脚本。
+Modrinth-ChineseTranslated 是一个用于Ai翻译汉化 Modrinth 网页的用户脚本。
 
 ## 安装
 
 ### 使用 Tampermonkey 或 Violentmonkey
 
-1. 根据您的浏览器选择安装 Tampermonkey 或 Violentmonkey。
-
-2. 打开 [Modrinth-ChineseTranslated](https://github.com/YlovexLN/Modrinth-ChineseTranslated/releases/latest/download/script.user.js) 脚本页面。
-
-3. 点击 ''安装此脚本'' 按钮，等待安装完成。
-
-4. 访问 Modrinth 网站，您将看到已经汉化的界面。
+1. 根据您的浏览器选择安装 [Tampermonkey](https://www.tampermonkey.net/) 或 [Violentmonkey](https://violentmonkey.github.io/)。
+2. 打开 [Modrinth-ChineseTranslated 脚本页面](https://github.com/YlovexLN/Modrinth-ChineseTranslated/releases/latest/download/script.user.js)。
+3. 点击“安装此脚本”按钮，等待安装完成。
+4. 访问 [Modrinth](https://modrinth.com/) 网站，您将看到已经汉化的界面。
 
 ### 使用 Greasy Fork
 
-1. 访问 [Greasy Fork](https://greasyfork.org/zh-CN/scripts/526366-modrinth-chinesetranslated) 下载界面。
-
-2. 点击 ''安装此脚本'' 按钮，等待安装完成。
-
-3. 访问 Modrinth 网站，您将看到已经汉化的界面。
+1. 访问 [Greasy Fork](https://greasyfork.org/zh-CN/scripts/526366-modrinth-chinesetranslated)。
+2. 点击“安装此脚本”按钮，等待安装完成。
+3. 访问 [Modrinth](https://modrinth.com/) 网站，您将看到已经汉化的界面。
 
 ## 开源协议
 
@@ -35,5 +30,4 @@ Modrinth-ChineseTranslated 是一个用Ai翻译汉化 Modrinth 网页的用户�
 ## 鸣谢
 
 - [Qianwen](https://tongyi.aliyun.com/) 提供了翻译服务
-
 - [OpenAI](https://openai.com/) 提供了脚本模板
