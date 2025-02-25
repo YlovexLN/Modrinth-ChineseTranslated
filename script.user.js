@@ -360,6 +360,17 @@
     "Read more": "阅读更多",
     "See all": "查看全部",
     "Load more": "加载更多",
+    //Mods页面补全
+    "75% of ad revenue goes to creators": "75% 的广告收入归创作者所有",
+    "Support creators and Modrinth ad-free with Modrinth+":
+      "通过 Modrinth+ 无广告地支持创作者和 Modrinth",
+    "Game version": "游戏版本",
+    Search: "搜索",
+    "Show all versions": "显示所有版本",
+    Loader: "加载器",
+    "Show more": "显示更多",
+
+    // 遍历页面内容并替换为翻译
   };
 
   // 遍历页面内容并替换为翻译
