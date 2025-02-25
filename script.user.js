@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Modrinth-ChineseTranslated
 // @namespace    http://tampermonkey.net/
-// @version      0.1.4
+// @version      0.1.5
 // @description  一个汉化Modrinth网页的的脚本，将 Modrinth 网站的内容翻译成中文。
 // @author       YlovexLN
 // @match        https://modrinth.com/*
@@ -71,6 +71,8 @@
     "Play with your favorite launcher": "使用你喜爱的启动器游玩",
     "Modrinth's open-source API lets launchers add deep integration with Modrinth. You can use Modrinth through":
       "Modrinth 的开源 API 让启动器能够深度集成 Modrinth。你可以通过",
+    "Modrinth's open-source API lets launchers add deep integration with Modrinth. You can use Modrinth through our own app and some of the most popular launchers like ATLauncher, MultiMC, and Prism Launcher.":
+      "Modrinth 的开源 API 让启动器能够深度集成 Modrinth。你可以通过我们自己的应用程序和一些最受欢迎的启动器（如 ATLauncher、MultiMC 和 Prism Launcher）使用 Modrinth。",
     "For Creators": "创作者专区",
     "Share your content with the world": "与世界分享你的内容",
     "Give an online home to your creations and reach a massive audience of dedicated players":
@@ -103,12 +105,26 @@
     Careers: "职位",
     Resources: "资源",
     Support: "支持",
+    About: "关于",
     Blog: "博客",
     Docs: "文档",
     Status: "状态",
+    "Rewards Program": "奖励计划",
+    Products: "产品",
+    "Modrinth Servers": "Modrinth 服务器",
+    "Help Center": "帮助中心",
+    Translate: "翻译",
+    "Report issues": "报告问题",
+    "API documentation": "API 文档",
+    Legal: "法律",
+    "Content Rules": "内容规则",
+    "Terms of Use": "使用条款",
+    "Security Notice": "安全声明",
     Interact: "互动",
     "X (Twitter)": "X (推特)",
     "Get Modrinth App": "获取 Modrinth 应用",
+    "Sign in": "登录",
+    "Sign up": "注册",
     "Change theme": "更改主题",
     "NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.":
       "这不是官方的 Minecraft 服务。未经 Mojang 或 Microsoft 批准或关联。",
