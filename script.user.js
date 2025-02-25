@@ -428,19 +428,45 @@
   const fixNavTabStyle = () => {
     const navTab = document.querySelector(".navtabs-transition");
     if (navTab) {
-      navTab.style.backgroundColor = "rgb(var(--color-button-bgSelected))";
-      navTab.style.opacity = "1";
+      navTab.style.cssText = `
+        background-color: rgb(var(--color-button-bgSelected)) !important;
+        opacity: 1 !important;
+        transition: transform 0.15s ease-in-out !important;
+      `;
+    }
+  };
+
+  // 创建一个专门用于监视导航栏样式的观察器
+  const styleObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (
+        mutation.type === "attributes" &&
+        (mutation.attributeName === "style" ||
+          mutation.attributeName === "class")
+      ) {
+        fixNavTabStyle();
+      }
+    });
+  });
+
+  // 设置观察器
+  const setupStyleObserver = () => {
+    const navTab = document.querySelector(".navtabs-transition");
+    if (navTab) {
+      styleObserver.observe(navTab, {
+        attributes: true,
+        attributeFilter: ["style", "class"],
+      });
+      fixNavTabStyle();
     }
   };
 
   observer.observe(document.body, {
     childList: true,
     subtree: true,
-    attributes: true,
-    attributeFilter: ["style", "class"],
   });
 
   // 初次加载时执行
   translateText(document.body);
-  fixNavTabStyle();
+  setupStyleObserver();
 })();
