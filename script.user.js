@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Modrinth-ChineseTranslated
 // @namespace    http://tampermonkey.net/
-// @version      0.1.9
+// @version      0.2.0
 // @description  一个汉化Modrinth网页的的脚本，将 Modrinth 网站的内容翻译成中文。
 // @author       YlovexLN
 // @match        https://modrinth.com/*
@@ -421,13 +421,26 @@
   // 页面加载后开始翻译
   const observer = new MutationObserver(() => {
     translateText(document.body);
+    fixNavTabStyle();
   });
+
+  // 添加导航栏样式修复函数
+  const fixNavTabStyle = () => {
+    const navTab = document.querySelector(".navtabs-transition");
+    if (navTab) {
+      navTab.style.backgroundColor = "rgb(var(--color-button-bgSelected))";
+      navTab.style.opacity = "1";
+    }
+  };
 
   observer.observe(document.body, {
     childList: true,
     subtree: true,
+    attributes: true,
+    attributeFilter: ["style", "class"],
   });
 
-  // 初次加载时立即翻译
+  // 初次加载时执行
   translateText(document.body);
+  fixNavTabStyle();
 })();
