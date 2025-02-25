@@ -365,7 +365,7 @@
     "Support creators and Modrinth ad-free with":
       "通过 Modrinth+ 无广告地支持创作者和",
     "Game version": "游戏版本",
-    Search: "搜索",
+    "Search...": "搜索...",
     "Show all versions": "显示所有版本",
     Loader: "加载器",
     "Show more": "显示更多",
