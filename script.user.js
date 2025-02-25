@@ -74,7 +74,7 @@
     "our own app": "我们自己的应用程序",
     "and some of the most popular launchers like ATLauncher, MultiMC, and Prism Launcher.":
       "和一些最受欢迎的启动器(如 ATLauncher、MultiMC 和 Prism Launcher)使用 Modrinth。",
-      "For Creators": "创作者专区",
+    "For Creators": "创作者专区",
     "Share your content with the world": "与世界分享你的内容",
     "Give an online home to your creations and reach a massive audience of dedicated players":
       "为你创作的内容提供在线家园，并触及大量忠实玩家",
