@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Modrinth-ChineseTranslated
 // @namespace    http://tampermonkey.net/
-// @version      0.1.6
+// @version      0.1.7
 // @description  一个汉化Modrinth网页的的脚本，将 Modrinth 网站的内容翻译成中文。
 // @author       YlovexLN
 // @match        https://modrinth.com/*
@@ -98,7 +98,9 @@
       "通过 Modrinth 团队的持续更新，获得最佳的模组制作体验",
     "Read more about": "了解更多关于",
     "Visit the blog": "访问博客",
-    "Modrinth is open source.": "Modrinth 是开源的。",
+    "Modrinth is": "Modrinth 是",
+    "open source": "开源的",
+    ".": "。",
     Company: "公司",
     Terms: "条款",
     Privacy: "隐私",
@@ -126,6 +128,11 @@
     "Get Modrinth App": "获取 Modrinth 应用",
     "Sign in": "登录",
     "Sign up": "注册",
+    "Sign in with": "使用以下方式登录",
+    "Or use a password": "或使用密码",
+    "Create an account": "创建账户",
+    "Enter two-factor code": "输入两步验证码",
+    "Please enter a two-factor code to proceed.": "请输入两步验证码以继续。",
     "Change theme": "更改主题",
     "NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.":
       "这不是官方的 Minecraft 服务。未经 Mojang 或 Microsoft 批准或关联。",
