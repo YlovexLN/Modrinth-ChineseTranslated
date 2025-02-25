@@ -362,8 +362,8 @@
     "Load more": "加载更多",
     //Mods页面补全
     "75% of ad revenue goes to creators": "75% 的广告收入归创作者所有",
-    "Support creators and Modrinth ad-free with Modrinth+":
-      "通过 Modrinth+ 无广告地支持创作者和 Modrinth",
+    "Support creators and Modrinth ad-free with":
+      "通过 Modrinth+ 无广告地支持创作者和",
     "Game version": "游戏版本",
     Search: "搜索",
     "Show all versions": "显示所有版本",
