@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Modrinth-ChineseTranslated
 // @namespace    http://tampermonkey.net/
-// @version      0.2.0
+// @version      0.1.9
 // @description  一个汉化Modrinth网页的的脚本，将 Modrinth 网站的内容翻译成中文。
 // @author       YlovexLN
 // @match        https://modrinth.com/*
@@ -421,52 +421,13 @@
   // 页面加载后开始翻译
   const observer = new MutationObserver(() => {
     translateText(document.body);
-    fixNavTabStyle();
   });
-
-  // 添加导航栏样式修复函数
-  const fixNavTabStyle = () => {
-    const navTab = document.querySelector(".navtabs-transition");
-    if (navTab) {
-      navTab.style.cssText = `
-        background-color: rgb(var(--color-button-bgSelected)) !important;
-        opacity: 1 !important;
-        transition: transform 0.15s ease-in-out !important;
-      `;
-    }
-  };
-
-  // 创建一个专门用于监视导航栏样式的观察器
-  const styleObserver = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (
-        mutation.type === "attributes" &&
-        (mutation.attributeName === "style" ||
-          mutation.attributeName === "class")
-      ) {
-        fixNavTabStyle();
-      }
-    });
-  });
-
-  // 设置观察器
-  const setupStyleObserver = () => {
-    const navTab = document.querySelector(".navtabs-transition");
-    if (navTab) {
-      styleObserver.observe(navTab, {
-        attributes: true,
-        attributeFilter: ["style", "class"],
-      });
-      fixNavTabStyle();
-    }
-  };
 
   observer.observe(document.body, {
     childList: true,
     subtree: true,
   });
 
-  // 初次加载时执行
+  // 初次加载时立即翻译
   translateText(document.body);
-  setupStyleObserver();
 })();
