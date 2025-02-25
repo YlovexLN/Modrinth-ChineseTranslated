@@ -369,7 +369,30 @@
     "Show all versions": "显示所有版本",
     Loader: "加载器",
     "Show more": "显示更多",
-
+    Adventure: "冒险",
+    Cursed: "诅咒",
+    Decoration: "装饰",
+    Economy: "经济",
+    Equipment: "装备",
+    Food: "食物",
+    "Game Mechanics": "游戏机制",
+    Library: "库",
+    Magic: "魔法",
+    Management: "管理",
+    Minigame: "小游戏",
+    Mobs: "生物",
+    Optimization: "优化",
+    Social: "社交",
+    Storage: "存储",
+    Technology: "科技",
+    Transportation: "运输",
+    Utility: "实用工具",
+    "World Generation": "世界生成",
+    Environment: "环境",
+    Client: "客户端",
+    Server: "服务端",
+    "Open source": "开源",
+    
     // 遍历页面内容并替换为翻译
   };
 
