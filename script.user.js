@@ -403,7 +403,15 @@
       if (translations[originalText]) {
         node.textContent = translations[originalText];
       }
-    } else {
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      // 处理 placeholder 属性
+      if (node.hasAttribute("placeholder")) {
+        const originalPlaceholder = node.getAttribute("placeholder").trim();
+        if (translations[originalPlaceholder]) {
+          node.setAttribute("placeholder", translations[originalPlaceholder]);
+        }
+      }
+      // 继续遍历子节点
       for (let child of node.childNodes) {
         translateText(child);
       }
