@@ -26,10 +26,8 @@ Modrinth-ChineseTranslated 是一个用于Ai翻译汉化 Modrinth 网页的用�
 ## 开发相关
 
 - [VsCode](https://code.visualstudio.com/) 用于代码的编写
-- [Markdownlint](<https://marketplace.visualstudio.com/items?itemName=DavidAnson>
-  .vscode-markdownlint) 用于格式化Markdown以及语法检查
-- [Prettier](<https://marketplace.visualstudio.com/items?itemName=esbenp>
-  .prettier-vscode) 用于代码格式化
+- [Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) 用于格式化Markdown以及语法检查
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) 用于代码格式化
 
 在修改代码后请用[Markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)和[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)扩展格式化代码，并确保代码风格。
 
