@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Modrinth-ChineseTranslated
 // @namespace    http://tampermonkey.net/
-// @version      0.1.9
+// @version      0.2.1
 // @description  一个汉化Modrinth网页的的脚本，将 Modrinth 网站的内容翻译成中文。
 // @author       YlovexLN
 // @match        https://modrinth.com/*
@@ -238,7 +238,7 @@
     Starred: "收藏",
     Favorites: "收藏夹",
     "User Reviews": "用户评论",
-    "Organization": "团队",
+    Organization: "团队",
     Developer: "开发者",
     Owner: "所有者",
     "Created by": "创建者",
@@ -387,7 +387,7 @@
     "Read more": "阅读更多",
     "See all": "查看全部",
     "Load more": "加载更多",
-    "Exclude": "排除",
+    Exclude: "排除",
     "More options": "更多选项",
     Report: "举报",
     "Copy ID": "复制ID",
@@ -484,8 +484,8 @@
     "Select your preferred color theme for Modrinth on this device.":
       "在此设备上为 Modrinth 选择您喜欢的颜色主题。",
     "Sync with system": "与系统同步",
-    "Light": "浅色",
-    "Dark": "深色",
+    Light: "浅色",
+    Dark: "深色",
     "Project list layouts": "项目列表布局",
     "Select your preferred layout for each page that displays project lists on this device.":
       "为该设备上显示项目列表的每个页面选择您喜欢的布局。",
@@ -501,7 +501,8 @@
     "Toggle features": "切换功能",
     "Advanced rendering": "高级渲染",
     "Open external links in new tab": "在新标签页中打开外部链接",
-    "Right-aligned filters sidebar on search pages": "搜索页面上右对齐的过滤器侧边栏",
+    "Right-aligned filters sidebar on search pages":
+      "搜索页面上右对齐的过滤器侧边栏",
     "Left-aligned sidebar on content pages": "内容页左对齐侧边栏",
     "Enable or disable certain features on this device.":
       "启用或禁用此设备上的某些功能。",
@@ -520,7 +521,7 @@
     "Your profile information is publicly viewable on Modrinth and through the Modrinth API。":
       "您的个人资料信息可在 Modrinth 上以及通过 Modrinth API 公开查看。",
     "Profile picture": "个人资料头像",
-    "Upload image": "上传图片",
+    "Upload image": "上传图片",
     "Remove image": "删除图片",
     "A unique case-insensitive name to identify your profile.":
       "一个不区分大小写的唯一名称，用于标识您的个人资料。",
@@ -543,18 +544,22 @@
     "Manage authentication providers": "管理身份验证提供程序",
     "Authentication providers": "身份验证提供程序",
     "Manage providers": "管理提供程序",
-    "Provider": "提供程序",
+    Provider: "提供程序",
     Add: "添加",
     Remove: "删除",
     "Data export": "数据导出",
     "Generate export": "生成导出",
     "Delete account": "删除账户",
-    "Changes the email associated with your account.": "更改与您的帐户关联的电子邮件。",
-    "Your account information is not displayed publicly.": "您的帐户信息不会公开显示。",
-    "Set a permanent password to login to your account.": "设置永久密码以登录您的帐户。",
+    "Changes the email associated with your account.":
+      "更改与您的帐户关联的电子邮件。",
+    "Your account information is not displayed publicly.":
+      "您的帐户信息不会公开显示。",
+    "Set a permanent password to login to your account.":
+      "设置永久密码以登录您的帐户。",
     "New password": "新密码",
     "Confirm new password": "确认新密码",
-    "Add an additional layer of security to your account during login.": "在登录期间为您的帐户添加额外的安全层。",
+    "Add an additional layer of security to your account during login.":
+      "在登录期间为您的帐户添加额外的安全层。",
     "Two-factor authentication keeps your account secure by requiring access to a second device in order to sign in.":
       "2FA验证要求访问第二台设备才能登录，从而确保您的帐户安全。",
     "Scan the QR code with Authy, Microsoft Authenticator, or any other 2FA app to begin.":
@@ -571,13 +576,13 @@
     "You have not authorized any applications.": "您尚未授权任何应用程序。",
     "When you authorize an application with your Modrinth account, you grant it access to your account. You can manage and review access to your account here at any time.":
       "当您使用 Modrinth 帐户授权某个应用程序时，即表示您授予该应用程序访问您帐户的权限。您可以随时在此管理和查看您帐户的访问权限。",
-    "Sessions": "会话",
+    Sessions: "会话",
     "Here are all the devices that are currently logged in with your Modrinth account. You can log out of each one individually.":
       "以下是当前已使用您的 Modrinth 帐户登录的所有设备。您可以单独退出每个设备。",
     "If you see an entry you don't recognize, log out of that device and change your Modrinth account password immediately.":
       "如果您看到不认识的条目，请立即退出该设备并更改您的 Modrinth 帐户密码。",
     "Billing and subscriptions": "计费和订阅",
-    "Subscriptions": "订阅",
+    Subscriptions: "订阅",
     "Manage your Modrinth subscriptions.": "管理您的 Modrinth 订阅",
     "Payment methods": "付款方式",
     "Add payment method": "添加付款方式",
@@ -587,12 +592,11 @@
     "Create a PAT": "创建PAT",
     "PATs can be used to access Modrinth's API. For more information, see Modrinth's API documentation. They can be created and revoked at any time.":
       "PAT 可用于访问 Modrinth 的 API。更多信息，请参阅 Modrinth 的 API 文档 。PAT 可以随时创建和撤销。",
-    "Your applications":"您的应用程序",
-    "New Application": "新申请",
+    "Your applications": "您的应用程序",
+    "New Application": " 新申请",
     "Applications can be used to authenticate Modrinth's users with your products. For more information, see Modrinth's API documentation.":
       "应用程序可用于通过您的产品对 Modrinth 的用户进行身份验证。有关更多信息，请参阅 Modrinth 的 API 文档 。",
-    
-    
+
     //仪表板补全
     Overview: "概述",
     "Active reports": "活动报告",
@@ -602,8 +606,7 @@
     "View notification history": "查看历史消息记录",
     "Total downloads": "总下载量",
     "Total followers": "总关注量",
-    
-    
+
     // 遍历页面内容并替换为翻译
   };
 
