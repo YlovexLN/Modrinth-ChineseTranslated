@@ -23,6 +23,16 @@ Modrinth-ChineseTranslated 是一个用于Ai翻译汉化 Modrinth 网页的用�
 2. 点击“安装此脚本”按钮，等待安装完成。
 3. 访问 [Modrinth](https://modrinth.com/) 网站，您将看到已经汉化的界面。
 
+## 开发相关
+
+- [VsCode](https://code.visualstudio.com/) 用于代码的编写
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) 用于代码格式化
+
+在修改代码后请用[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)扩展格式化代码，并确保代码风格。
+
+## 开发者
+
+- [YlovexLN](https://github.com/YlovexLN)
 ## 开源协议
 
 本项目遵循 [GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.html) 开源协议，欢迎各位开发者参与贡献和改进。
