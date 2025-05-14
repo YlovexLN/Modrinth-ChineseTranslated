@@ -42,11 +42,11 @@
     "Upgrade to Modrinth+": "升级到 Modrinth+",
     "Saved projects": "保存的项目",
     "My servers": "我的服务器",
-    Notifications: "通知",
+    通知: "通知",
     Revenue: "收入",
-    Analytics: "分析",
+    分析: "分析",
     "Sign out": "登出",
-    "Discover, play, and share Minecraft content through our open-source platform built for the community.":
+    "Discover, play, 和 share Minecraft content through our open-source platform built for the community.":
       "通过我们为社区打造的开源平台发现、游玩和分享 Minecraft 内容。",
     "Discover mods": "发现模组",
     "Go to dashboard": "前往仪表盘",
@@ -57,12 +57,12 @@
     "Find what you want, quickly and easily": "快速轻松地找到你想找的内容",
     "Modrinth's lightning-fast search and powerful filters let you find what you want as you type.":
       "Modrinth 的超快搜索和强大的筛选功能让你在输入时就能找到想要的内容。",
-    "Sort by": "排序",
+    "Sort by:": "排序:",
     Relevance: "相关性",
     Downloads: "下载量",
     Follows: "关注数",
-    Updated: "更新时间",
-    Newest: "最新",
+    "Date updated": "更新时间",
+    "Date published": "发布时间",
     "Follow projects you love": "关注你喜欢的项目",
     "Get notified every time your favorite projects update and stay in the loop":
       "每次你关注的项目更新时都会收到通知，不错过任何动态",
@@ -72,14 +72,14 @@
     "Modrinth's open-source API lets launchers add deep integration with Modrinth. You can use Modrinth through":
       "Modrinth 的开源 API 让启动器能够深度集成 Modrinth。你可以通过",
     "our own app": "我们自己的应用程序",
-    "and some of the most popular launchers like ATLauncher, MultiMC, and Prism Launcher.":
+    "and some of the most popular launchers like ATLauncher, MultiMC, 和 Prism Launcher.":
       "和一些最受欢迎的启动器(如 ATLauncher、MultiMC 和 Prism Launcher)使用 Modrinth。",
     "For Creators": "创作者专区",
     "Share your content with the world": "与世界分享你的内容",
     "Give an online home to your creations and reach a massive audience of dedicated players":
       "为你创作的内容提供在线家园，并触及大量忠实玩家",
     Discovery: "发现",
-    "Get your project discovered by thousands of users through search, our home page, Discord server, and more ways to come in the future!":
+    "Get your project discovered by thousands of users through search, our home page, Discord server, 和 more ways to come in the future!":
       "通过搜索、我们的首页、Discord 服务器以及未来更多方式，让你的项目被成千上万的用户发现！",
     "Team Management": "团队管理",
     "Invite your teammates and manage roles and permissions with ease":
@@ -329,12 +329,12 @@
     Blocked: "已阻止",
     Banned: "已封禁",
     Suspended: "已暂停",
-    Disabled: "已禁用",
+    禁用: "已禁用",
     Enabled: "已启用",
     Visible: "可见",
     Hidden: "隐藏",
     Open: "打开",
-    Closed: "关闭",
+    已关闭: "关闭",
     Locked: "锁定",
     Unlocked: "解锁",
     Allowed: "允许",
@@ -369,6 +369,7 @@
     "Show all versions": "显示所有版本",
     Loader: "加载器",
     "Show more": "显示更多",
+    "Show fewer": "显示更少",
     Adventure: "冒险",
     Cursed: "诅咒",
     Decoration: "装饰",
@@ -388,6 +389,13 @@
     Transportation: "运输",
     Utility: "实用工具",
     "World Generation": "世界生成",
+    Combat:"战斗",
+    Modded:"修改",
+    Realistic:"现实",
+    Simplistic:"简洁",
+    Themed:"主题",
+    Tweaks:"调整",
+    "Vanilla like":"原版风格",
     Environment: "环境",
     Client: "客户端",
     Server: "服务端",
