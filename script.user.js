@@ -25,6 +25,8 @@
     "New organization": "新建组织",
     "The place for Minecraft mods plugins data packs shaders resource packs modpacks":
       "Minecraft 模组、插件、数据包、光影包、资源包和模组包的家园",
+    "Discover, play, and share Minecraft content through our open-source platform built for the community.":
+      "通过我们为社区构建的开源平台发现、游玩和分享 Minecraft 内容。",
     Mods: "模组",
     mods: "模组",
     Plugins: "插件",
@@ -474,7 +476,133 @@
     Multiplayer: "多人",
     Quests: "任务",
     //插件页面补全
-    Platfrom: "平台"
+    Platfrom: "平台",
+    //设置页面补全
+    Display: "显示",
+    Appearance: "外观",
+    "Color theme": "颜色主题",
+    "Select your preferred color theme for Modrinth on this device.":
+      "在此设备上为 Modrinth 选择您喜欢的颜色主题。",
+    "Sync with system": "与系统同步",
+    "Light": "浅色",
+    "Dark": "深色",
+    "Project list layouts": "项目列表布局",
+    "Select your preferred layout for each page that displays project lists on this device.":
+      "为该设备上显示项目列表的每个页面选择您喜欢的布局。",
+    Rows: "列表",
+    Grid: "网格",
+    "Mods page": "模组页面",
+    "Plugins page": "插件页面",
+    "Data Packs page": "数据包页面",
+    "Shaders page": "光影包页面",
+    "Resource Packs page": "资源包页面",
+    "Modpacks page": "整合包页面",
+    "User profile pages": "用户个人资料页面",
+    "Toggle features": "切换功能",
+    "Advanced rendering": "高级渲染",
+    "Open external links in new tab": "在新标签页中打开外部链接",
+    "Right-aligned filters sidebar on search pages": "搜索页面上右对齐的过滤器侧边栏",
+    "Left-aligned sidebar on content pages": "内容页左对齐侧边栏",
+    "Enable or disable certain features on this device.":
+      "启用或禁用此设备上的某些功能。",
+    "Enables advanced rendering such as blur effects that may cause performance issues without hardware-accelerated rendering.":
+      "启用高级渲染（例如模糊效果），如果没有硬件加速渲染，可能会导致性能问题。",
+    "Make links which go outside of Modrinth open in a new tab. No matter this setting, links on the same domain and in Markdown descriptions will open in the same tab, and links on ads and edit pages will open in a new tab.":
+      "让 Modrinth 之外的链接在新标签页中打开。无论此设置如何，同一域名和 Markdown 描述中的链接都会在同一个标​​签页中打开，而广告和编辑页面上的链接则会在新标签页中打开。",
+    "Aligns the filters sidebar to the right of the search results.":
+      "将过滤器侧边栏与搜索结果的右侧对齐。",
+    "Aligns the sidebar to the left of the page's content.":
+      "将侧边栏与页面内容左侧对齐。",
+    "Manage projects": "管理项目",
+    Account: "账户",
+    "Public profile": "公开资料",
+    "Profile information": "个人资料信息",
+    "Your profile information is publicly viewable on Modrinth and through the Modrinth API。":
+      "您的个人资料信息可在 Modrinth 上以及通过 Modrinth API 公开查看。",
+    "Profile picture": "个人资料头像",
+    "Upload image": "上传图片",
+    "Remove image": "删除图片",
+    "A unique case-insensitive name to identify your profile.":
+      "一个不区分大小写的唯一名称，用于标识您的个人资料。",
+    Bio: "简介",
+    "A short description to tell everyone a little bit about you.":
+      "简短的描述，让大家稍微了解一下您。",
+    "Changes saved": "保存更改",
+    "Account and security": "账户与安全",
+    "Account security": "账户安全",
+    Email: "电子邮件",
+    "Change email": "修改电子邮件",
+    "Email address": "电子邮件地址",
+    "Enter Your Email Address...": "输入您的电子邮件地址...",
+    "Save email": "保存电子邮件",
+    "Add password": "添加密码",
+    "Save password": "保存密码",
+    "Two-factor authentication": "2FA验证",
+    "Setup two-factor authentication": "设置2FA验证",
+    "Setup 2FA": "设置2FA",
+    "Manage authentication providers": "管理身份验证提供程序",
+    "Authentication providers": "身份验证提供程序",
+    "Manage providers": "管理提供程序",
+    "Provider": "提供程序",
+    Add: "添加",
+    Remove: "删除",
+    "Data export": "数据导出",
+    "Generate export": "生成导出",
+    "Delete account": "删除账户",
+    "Changes the email associated with your account.": "更改与您的帐户关联的电子邮件。",
+    "Your account information is not displayed publicly.": "您的帐户信息不会公开显示。",
+    "Set a permanent password to login to your account.": "设置永久密码以登录您的帐户。",
+    "New password": "新密码",
+    "Confirm new password": "确认新密码",
+    "Add an additional layer of security to your account during login.": "在登录期间为您的帐户添加额外的安全层。",
+    "Two-factor authentication keeps your account secure by requiring access to a second device in order to sign in.":
+      "2FA验证要求访问第二台设备才能登录，从而确保您的帐户安全。",
+    "Scan the QR code with Authy, Microsoft Authenticator, or any other 2FA app to begin.":
+      "使用 Authy 、 Microsoft Authenticator 或任何其他 2FA 应用扫描二维码即可开始。",
+    "If the QR code does not scan, you can manually enter the secret:":
+      "如果二维码扫描不出来，可以手动输入密码：",
+    "Add or remove sign-on methods from your account, including GitHub, GitLab, Microsoft, Discord, Steam, and Google.":
+      "从您的帐户中添加或删除登录方法，包括 GitHub、GitLab、Microsoft、Discord、Steam 和 Google。",
+    "Request a copy of all your personal data you have uploaded to Modrinth. This may take several minutes to complete.":
+      "请求获取您已上传至 Modrinth 的所有个人数据的副本。这可能需要几分钟才能完成。",
+    "Once you delete your account, there is no going back. Deleting your account will remove all attached data, excluding projects, from our servers.":
+      "帐户一旦删除，将无法恢复。删除帐户将从我们的服务器中删除所有附加数据（项目除外）。",
+    "Authorized apps": "授权应用",
+    "You have not authorized any applications.": "您尚未授权任何应用程序。",
+    "When you authorize an application with your Modrinth account, you grant it access to your account. You can manage and review access to your account here at any time.":
+      "当您使用 Modrinth 帐户授权某个应用程序时，即表示您授予该应用程序访问您帐户的权限。您可以随时在此管理和查看您帐户的访问权限。",
+    "Sessions": "会话",
+    "Here are all the devices that are currently logged in with your Modrinth account. You can log out of each one individually.":
+      "以下是当前已使用您的 Modrinth 帐户登录的所有设备。您可以单独退出每个设备。",
+    "If you see an entry you don't recognize, log out of that device and change your Modrinth account password immediately.":
+      "如果您看到不认识的条目，请立即退出该设备并更改您的 Modrinth 帐户密码。",
+    "Billing and subscriptions": "计费和订阅",
+    "Subscriptions": "订阅",
+    "Manage your Modrinth subscriptions.": "管理您的 Modrinth 订阅",
+    "Payment methods": "付款方式",
+    "Add payment method": "添加付款方式",
+    "View past charges": "查看过去的费用",
+    "You have not added any payment methods.": "您尚未添加任何付款方式。",
+    "Personal access tokens": "个人访问令牌",
+    "Create a PAT": "创建PAT",
+    "PATs can be used to access Modrinth's API. For more information, see Modrinth's API documentation. They can be created and revoked at any time.":
+      "PAT 可用于访问 Modrinth 的 API。更多信息，请参阅 Modrinth 的 API 文档 。PAT 可以随时创建和撤销。",
+    "Your applications":"您的应用程序",
+    "New Application": "新申请",
+    "Applications can be used to authenticate Modrinth's users with your products. For more information, see Modrinth's API documentation.":
+      "应用程序可用于通过您的产品对 Modrinth 的用户进行身份验证。有关更多信息，请参阅 Modrinth 的 API 文档 。",
+    
+    
+    //仪表板补全
+    Overview: "概述",
+    "Active reports": "活动报告",
+    Manage: "管理",
+    "Visit your profile": "访问您的个人资料",
+    "You have no unread notifications.": "您没有未读通知。",
+    "View notification history": "查看历史消息记录",
+    "Total downloads": "总下载量",
+    "Total followers": "总关注量",
+    
     
     // 遍历页面内容并替换为翻译
   };
