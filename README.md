@@ -30,9 +30,6 @@ Modrinth-ChineseTranslated 是一个用于Ai翻译汉化 Modrinth 网页的用�
 
 在修改代码后请用[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)扩展格式化代码，并确保代码风格。
 
-## 开发者
-
-- [YlovexLN](https://github.com/YlovexLN)
 ## 开源协议
 
 本项目遵循 [GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.html) 开源协议，欢迎各位开发者参与贡献和改进。
@@ -41,3 +38,7 @@ Modrinth-ChineseTranslated 是一个用于Ai翻译汉化 Modrinth 网页的用�
 
 - [Qianwen](https://tongyi.aliyun.com/) 提供了翻译服务
 - [OpenAI](https://openai.com/) 提供了脚本模板
+
+感谢以下开发者对本项目作出的贡献:
+
+[![Contributors](https://contrib.rocks/image?repo=YlovexLN/Modrinth-ChineseTranslated&max=1000)](https://github.com/YlovexLN/Modrinth-ChineseTranslated/graphs/contributors)
