@@ -48,7 +48,7 @@
     Revenue: "收入",
     Analytics: "分析",
     "Sign out": "登出",
-    "Discover, play, 和 share Minecraft content through our open-source platform built for the community.":
+    "Discover, play, and share Minecraft content through our open-source platform built for the community.":
       "通过我们为社区打造的开源平台发现、游玩和分享 Minecraft 内容。",
     "Discover mods": "发现模组",
     "Go to dashboard": "前往仪表盘",
@@ -78,14 +78,14 @@
     "Modrinth's open-source API lets launchers add deep integration with Modrinth. You can use Modrinth through":
       "Modrinth 的开源 API 让启动器能够深度集成 Modrinth。你可以通过",
     "our own app": "我们自己的应用程序",
-    "and some of the most popular launchers like ATLauncher, MultiMC, 和 Prism Launcher.":
+    "and some of the most popular launchers like ATLauncher, MultiMC, and Prism Launcher.":
       "和一些最受欢迎的启动器(如 ATLauncher、MultiMC 和 Prism Launcher)使用 Modrinth。",
     "For Creators": "创作者专区",
     "Share your content with the world": "与世界分享你的内容",
     "Give an online home to your creations and reach a massive audience of dedicated players":
       "为你创作的内容提供在线家园，并触及大量忠实玩家",
     Discovery: "发现",
-    "Get your project discovered by thousands of users through search, our home page, Discord server, 和 more ways to come in the future!":
+    "Get your project discovered by thousands of users through search, our home page, Discord server, and more ways to come in the future!":
       "通过搜索、我们的首页、Discord 服务器以及未来更多方式，让你的项目被成千上万的用户发现！",
     "Team Management": "团队管理",
     "Invite your teammates and manage roles and permissions with ease":
@@ -97,7 +97,7 @@
     "Integrate with your build tools through Minotaur for automatic uploads right when you release a new version":
       "通过 Minotaur 与构建工具集成，实现在发布新版本时自动上传",
     "Data and Statistics": "数据和统计",
-    "Get detailed reports on page views, download counts, 和 revenue":
+    "Get detailed reports on page views, download counts, and revenue":
       "获取详细的页面浏览量、下载次数和收入报告",
     "Constantly Evolving": "不断进化",
     "Get the best modding experience possible with constant updates from the Modrinth team":
