@@ -233,7 +233,7 @@
     Reject: "拒绝",
     Draft: "草稿",
     Publish: "发布",
-    Published: "已发布",
+    Published: "发布于",
     Unpublished: "未发布",
     Starred: "收藏",
     Favorites: "收藏夹",
@@ -433,6 +433,11 @@
     Client: "客户端",
     Server: "服务端",
     "Open source": "开源",
+    Updated : "更新于 ",
+    yesterday: "昨天",
+    "last week": "上周",
+    "last month": "上个月",
+    "last year": "去年",
     //资源包页面补全
     Combat: "战斗",
     Modded: "修改",
@@ -611,26 +616,50 @@
   };
 
   // 遍历页面内容并替换为翻译
-  const translateText = (node) => {
-    if (node.nodeType === Node.TEXT_NODE) {
-      const originalText = node.textContent.trim();
-      if (translations[originalText]) {
-        node.textContent = translations[originalText];
-      }
-    } else if (node.nodeType === Node.ELEMENT_NODE) {
-      // 处理 placeholder 属性
-      if (node.hasAttribute("placeholder")) {
-        const originalPlaceholder = node.getAttribute("placeholder").trim();
-        if (translations[originalPlaceholder]) {
-          node.setAttribute("placeholder", translations[originalPlaceholder]);
+const translateText = (node) => {
+  if (node.nodeType === Node.TEXT_NODE) {
+    const originalText = node.textContent.trim();
+    
+    // 优先进行静态翻译
+    if (translations[originalText]) {
+      node.textContent = translations[originalText];
+    } else {
+      // 处理动态时间表达式
+      const timeRegex = /^(\d+)\s+(minute|hour|day|week|month|year)(?:s?)\s+ago$/i;
+      const match = originalText.match(timeRegex);
+      
+      if (match) {
+        const count = match[1];
+        const unit = match[2].toLowerCase();
+        let zhUnit;
+
+        switch (unit) {
+          case 'minute': zhUnit = '分钟'; break;
+          case 'hour': zhUnit = '小时'; break;
+          case 'day': zhUnit = '天'; break;
+          case 'week': zhUnit = '周'; break;
+          case 'month': zhUnit = '月'; break;
+          case 'year': zhUnit = '年'; break;
+          default: zhUnit = unit; // 防御性处理未知单位
         }
-      }
-      // 继续遍历子节点
-      for (let child of node.childNodes) {
-        translateText(child);
+
+        node.textContent = `${count}${zhUnit}前`;
       }
     }
-  };
+  } else if (node.nodeType === Node.ELEMENT_NODE) {
+    // 处理 placeholder 属性
+    if (node.hasAttribute("placeholder")) {
+      const originalPlaceholder = node.getAttribute("placeholder").trim();
+      if (translations[originalPlaceholder]) {
+        node.setAttribute("placeholder", translations[originalPlaceholder]);
+      }
+    }
+    // 继续遍历子节点
+    for (let child of node.childNodes) {
+      translateText(child);
+    }
+  }
+};
 
   // 页面加载后开始翻译
   const observer = new MutationObserver(() => {
