@@ -29,7 +29,7 @@ Modrinth-ChineseTranslated 是一个用于Ai翻译汉化 Modrinth 网页的用�
 - **Markdownlint** 用于格式化Markdown以及语法检查
 - **Prettier** 用于代码格式化
 
-> [Note]
+> [!NOTE]
 > 在修改代码后请用 Markdownlint 和 Prettier 扩展格式化代码，并确保代码风格。
 
 ## 开源协议
