@@ -65,8 +65,10 @@
     "Gallery view": "画廊视图",
     "Sort by:": "排序:",
     Relevance: "相关性",
-    Downloads: "下载量",
-    Follows: "关注数",
+    Downloads: "下载",
+    Follows: "关注",
+    download: "下载",
+    follower: "关注",
     "Date updated": "更新时间",
     "Date published": "发布时间",
     "Follow projects you love": "关注你喜欢的项目",
@@ -381,6 +383,7 @@
     Channels: "渠道",
     Compatibility: "兼容版本",
     Platforms: "平台",
+    Platform: "平台",
     "Supported environments": "运行环境",
     "Client-side": "客户端",
     "Server-side": "服务端",
@@ -392,6 +395,26 @@
     Report: "举报",
     "Copy ID": "复制ID",
     "Copy permanent link": "复制永久链接",
+    Licensed: "许可证 ",
+    "Creating a project": "创建项目",
+    Name: "名称",
+    "Enter project name...": "输入项目名称...",
+    Visibility: "可见性",
+    "The visibility of your project after it has been approved.": "项目审核通过后的可见性。",
+    Unlisted: "非公开",
+    Summary: "简介",
+    "A sentence or two that describes your project.": "一句或两句来描述你的项目。",
+    "Create project": "创建项目",
+    "Creating a collection": "创建收藏夹",
+    "Enter collection name...": "输入收藏夹名称...",
+    "A sentence or two that describes your collection.": "一句或两句来描述你的收藏夹。",
+    "Your new collection will be created as a public collection with no projects.": "你的新收藏夹将被创建为一个没有项目的公开收藏夹。",
+    "Create collection": "创建收藏夹",
+    "Creating an organization": "创建组织",
+    "Enter organization name...": "输入组织名称...",
+    "A sentence or two that describes your organization.": "一句或两句来描述你的组织。",
+    "You will be the owner of this organization, but you can invite other members and transfer ownership at any time.":
+      "你将成为该组织的所有者，但你可以随时邀请其他成员并转让所有权。",
     //Mods页面补全
     "75% of ad revenue goes to creators": "75% 的广告收入归创作者所有",
     "Support creators and Modrinth ad-free with ":
@@ -433,7 +456,7 @@
     Client: "客户端",
     Server: "服务端",
     "Open source": "开源",
-    Updated : "更新于 ",
+    Updated: "更新于 ",
     yesterday: "昨天",
     "last week": "上周",
     "last month": "上个月",
@@ -483,6 +506,7 @@
     //插件页面补全
     Platfrom: "平台",
     //设置页面补全
+    "Save changes": "保存更改",
     Display: "显示",
     Appearance: "外观",
     "Color theme": "颜色主题",
@@ -523,8 +547,9 @@
     Account: "账户",
     "Public profile": "公开资料",
     "Profile information": "个人资料信息",
-    "Your profile information is publicly viewable on Modrinth and through the Modrinth API。":
-      "您的个人资料信息可在 Modrinth 上以及通过 Modrinth API 公开查看。",
+    "Your profile information is publicly viewable on Modrinth and through the":
+      "您的个人资料信息可在 Modrinth 上以及通过",
+    "Modrinth API": " Modrinth API 公开查看",
     "Profile picture": "个人资料头像",
     "Upload image": "上传图片",
     "Remove image": "删除图片",
@@ -567,8 +592,8 @@
       "在登录期间为您的帐户添加额外的安全层。",
     "Two-factor authentication keeps your account secure by requiring access to a second device in order to sign in.":
       "2FA验证要求访问第二台设备才能登录，从而确保您的帐户安全。",
-    "Scan the QR code with Authy, Microsoft Authenticator, or any other 2FA app to begin.":
-      "使用 Authy 、 Microsoft Authenticator 或任何其他 2FA 应用扫描二维码即可开始。",
+    "Scan the QR code with": "使用",
+    ", or any other 2FA app to begin.": "或任何其他 2FA 应用扫描二维码即可开始。",
     "If the QR code does not scan, you can manually enter the secret:":
       "如果二维码扫描不出来，可以手动输入密码：",
     "Add or remove sign-on methods from your account, including GitHub, GitLab, Microsoft, Discord, Steam, and Google.":
@@ -582,10 +607,9 @@
     "When you authorize an application with your Modrinth account, you grant it access to your account. You can manage and review access to your account here at any time.":
       "当您使用 Modrinth 帐户授权某个应用程序时，即表示您授予该应用程序访问您帐户的权限。您可以随时在此管理和查看您帐户的访问权限。",
     Sessions: "会话",
-    "Here are all the devices that are currently logged in with your Modrinth account. You can log out of each one individually.":
-      "以下是当前已使用您的 Modrinth 帐户登录的所有设备。您可以单独退出每个设备。",
-    "If you see an entry you don't recognize, log out of that device and change your Modrinth account password immediately.":
-      "如果您看到不认识的条目，请立即退出该设备并更改您的 Modrinth 帐户密码。",
+    "Here are all the devices that are currently logged in with your Modrinth account. You can log out of each one individually.\n\nIf you see an entry you don't recognize, log out of that device and change your Modrinth account password immediately.":
+      "以下是当前使用您的 Modrinth 帐户登录的所有设备。您可以逐个退出。\n\n如果您看到不认识的条目，请立即退出该设备并更改您的 Modrinth 帐户密码。",
+    "Current session": "当前会话",
     "Billing and subscriptions": "计费和订阅",
     Subscriptions: "订阅",
     "Manage your Modrinth subscriptions.": "管理您的 Modrinth 订阅",
@@ -595,13 +619,15 @@
     "You have not added any payment methods.": "您尚未添加任何付款方式。",
     "Personal access tokens": "个人访问令牌",
     "Create a PAT": "创建PAT",
-    "PATs can be used to access Modrinth's API. For more information, see Modrinth's API documentation. They can be created and revoked at any time.":
-      "PAT 可用于访问 Modrinth 的 API。更多信息，请参阅 Modrinth 的 API 文档 。PAT 可以随时创建和撤销。",
+    "PATs can be used to access Modrinth's API. For more information, see": "PAT 可用于访问 Modrinth 的 API。更多信息请参阅 ",
+    "Modrinth's API documentation": "Modrinth 的 API 文档",
+    ". They can be created and revoked at any time.": "。PAT 可以随时创建和撤销。",
     "Your applications": "您的应用程序",
     "New Application": " 新申请",
-    "Applications can be used to authenticate Modrinth's users with your products. For more information, see Modrinth's API documentation.":
-      "应用程序可用于通过您的产品对 Modrinth 的用户进行身份验证。有关更多信息，请参阅 Modrinth 的 API 文档 。",
-
+    "Applications can be used to authenticate Modrinth's users with your products. For more information, see":
+      "应用程序可用于通过您的产品对 Modrinth 的用户进行身份验证。有关更多信息请参阅 ",
+    "You don't have any projects.\nWould you like to": "您还没有任何项目。您想要",
+    "create one": "创建一个吗",
     //仪表板补全
     Overview: "概述",
     "Active reports": "活动报告",
@@ -611,7 +637,56 @@
     "View notification history": "查看历史消息记录",
     "Total downloads": "总下载量",
     "Total followers": "总关注量",
-
+    "You don't have any unread notifications.": "您没有任何未读通知。",
+    Reports: "报告",
+    "You don't have any active reports.": "您没有任何活动报告。",
+    Views: "浏览量",
+    "Refresh the chart": "刷新图表",
+    "Download this data as CSV": "将此数据下载为 CSV",
+    "Toggle project colors": "切换项目颜色",
+    "Previous 30 minutes": "最近30分钟",
+    "Previous hour": "最近一小时",
+    "Previous 12 hours": "最近12小时",
+    "Previous 24 hours": "最近24小时",
+    "Today": "今天",
+    "Yesterday": "昨天",
+    "This week": "本周",
+    "Previous 7 days": "最近7天",
+    "This month": "本月",
+    "Last month": "上月",
+    "Previous 30 days": "最近30天",
+    "This quarter": "本季度",
+    "Last quarter": "上季度",
+    "This year": "今年",
+    "Last year": "去年",
+    "Previous year": "最近一年",
+    "Previous two years": "最近两年",
+    "All Time": "全部时间",
+    "You don't have any projects yet. Click the green button above to begin.": "您还没有任何项目。点击上面的绿色按钮开始。",
+    "Create a project": " 创建一个项目",
+    "Make an organization!": "创建一个组织！",
+    "Create organization": "创建组织",
+    "Create new": "新建",
+    "Available now": "立即可用",
+    "Total pending": "待处理",
+    "Available soon": "即将可用",
+    "Click to read about how Modrinth handles your revenue.": "点击查看 Modrinth 如何处理您的收入。",
+    "Withdraw": "提现",
+    "View transfer history": "查看转账历史",
+    "By uploading projects to Modrinth and withdrawing money from your account, you agree to the":
+      "通过向 Modrinth 上传项目并从您的帐户中提取资金，即表示您同意",
+    "Rewards Program Terms": "奖励计划条款",
+    ". For more information on how the rewards system works, see our information page": "有关奖励系统运作方式的更多信息，请参阅此处的信息",
+    "here": "页面",
+    "Payout methods": "支付方式",
+    "Connect your PayPal account to enable withdrawing to your PayPal balance.":
+      "连接您的 PayPal 帐户以启用提现到您的 PayPal 余额。",
+    "Sign in with PayPal": " 使用 PayPal 登录 ",
+    "Tremendous payments are sent to your Modrinth email. To change/set your Modrinth email, visit":
+      "Tremendous的付款将发送到您的 Modrinth 电子邮件。要更改/设置您的 Modrinth 电子邮件，请访问此",
+    "Enter your Venmo username below to enable withdrawing to your Venmo balance.":
+      "在下方输入您的 Venmo 用户名以启用提现到您的 Venmo 余额。",
+    "Save information": "保存信息",
     // 遍历页面内容并替换为翻译
   };
 
@@ -620,33 +695,59 @@ const translateText = (node) => {
   if (node.nodeType === Node.TEXT_NODE) {
     const originalText = node.textContent.trim();
     
-    // 优先进行静态翻译
+    // 优先静态翻译
     if (translations[originalText]) {
       node.textContent = translations[originalText];
-    } else {
-      // 处理动态时间表达式
-      const timeRegex = /^(\d+)\s+(minute|hour|day|week|month|year)(?:s?)\s+ago$/i;
-      const match = originalText.match(timeRegex);
-      
-      if (match) {
-        const count = match[1];
-        const unit = match[2].toLowerCase();
-        let zhUnit;
+      return;
+    }
+    
+    // 处理动态时间（如 "3 days ago"）
+    const timeRegex = /^(\d+)\s+(minute|hour|day|week|month|year)(?:s?)\s+ago$/i;
+    const timeMatch = originalText.match(timeRegex);
+    if (timeMatch) {
+      const count = timeMatch[1];
+      const unit = timeMatch[2].toLowerCase();
+      const zhUnit = {
+        minute: '分钟',
+        hour: '小时',
+        day: '天',
+        week: '周',
+        month: '月',
+        year: '年'
+      }[unit] || unit;
+      node.textContent = `${count}${zhUnit}前`;
+      return;
+    }
+    
+    // 处理动态数值（如 "56.13M downloads"）
+    const dynamicRegex = /^(\d+\.?\d*)[kKmM] (\w+)$/; 
+    const dynamicMatch = originalText.match(dynamicRegex);
+    if (dynamicMatch) {
+      const [_, numberPart, wordPart] = dynamicMatch;
+      const translatedWord = translations[wordPart.replace(/s$/, "")] || wordPart;
+      node.textContent = `${numberPart}${translatedWord}`;
+      return;
+    }
+  } 
 
-        switch (unit) {
-          case 'minute': zhUnit = '分钟'; break;
-          case 'hour': zhUnit = '小时'; break;
-          case 'day': zhUnit = '天'; break;
-          case 'week': zhUnit = '周'; break;
-          case 'month': zhUnit = '月'; break;
-          case 'year': zhUnit = '年'; break;
-          default: zhUnit = unit; // 防御性处理未知单位
+  // 处理 DOM 元素（含子节点）
+  if (node.nodeType === Node.ELEMENT_NODE) {
+    // 特殊处理：合并 download + s 的场景
+    if (node.classList.contains('stat-label')) {
+      const children = Array.from(node.childNodes);
+      for (let i = 0; i < children.length; i++) {
+        const child = children[i];
+        if (child.nodeType === Node.TEXT_NODE && ['download', 'follower'].includes(child.textContent.trim())) {
+          const next = children[i + 1];
+          if (next?.nodeType === Node.ELEMENT_NODE && next.textContent === 's') {
+            child.textContent = translations[child.textContent.trim()] || child.textContent.trim();
+            next.remove(); // 删除多余的 <span>s</span>
+            break;
+          }
         }
-
-        node.textContent = `${count}${zhUnit}前`;
       }
     }
-  } else if (node.nodeType === Node.ELEMENT_NODE) {
+
     // 处理 placeholder 属性
     if (node.hasAttribute("placeholder")) {
       const originalPlaceholder = node.getAttribute("placeholder").trim();
