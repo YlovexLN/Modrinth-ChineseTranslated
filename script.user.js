@@ -437,7 +437,7 @@
     "Show more": "显示更多",
     "Show fewer": "显示更少",
     Adventure: "冒险",
-    Cursed: "诅咒",
+    Cursed: "鬼畜",
     Decoration: "装饰",
     Economy: "经济",
     Equipment: "装备",
@@ -469,7 +469,7 @@
     //资源包页面补全
     Combat: "战斗",
     Modded: "修改",
-    Realistic: "现实",
+    Realistic: "写实",
     Simplistic: "简洁",
     Themed: "主题",
     Tweaks: "调整",
