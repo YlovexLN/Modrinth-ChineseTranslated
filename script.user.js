@@ -716,14 +716,16 @@
     "more notifications": "更多通知",
 
     //404
-    "Page not found": "页面未找到",
+    "Project not found": "未找到项目",
+    "Why?": "为什么？",
     "The page you were looking for doesn't seem to exist.":
       "您正在寻找的页面似乎不存在。",
     "You may have mistyped the project's URL.": "您可能输入了项目的错误 URL。",
     "The project's owner may have changed the URL, made the project private, or deleted it.":
       "项目的所有者可能已更改 URL、将项目设为私有或删除了它。",
-    "The project may have been taken down by Modrinth's moderation team for violating our Terms of Use.":
-      "Modrinth 的审核团队可能已采取措施违反了我们的使用条款。",
+    "The project may have been taken down by Modrinth's moderation team for violating our":
+      "Modrinth 的审核团队可能已因违反我们的",
+
     // 遍历页面内容并替换为翻译
   };
 
