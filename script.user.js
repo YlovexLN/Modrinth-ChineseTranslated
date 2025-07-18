@@ -724,7 +724,7 @@
     "The project's owner may have changed the URL, made the project private, or deleted it.":
       "项目的所有者可能已更改 URL、将项目设为私有或删除了它。",
     "The project may have been taken down by Modrinth's moderation team for violating our":
-      "Modrinth 的审核团队可能已因违反我们的",
+      "该项目可能已被 Modrinth 管理团队删除，原因是其违反了我们的",
 
     // 遍历页面内容并替换为翻译
   };
