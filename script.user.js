@@ -703,14 +703,17 @@
       "在下方输入您的 Venmo 用户名以启用提现到您的 Venmo 余额。",
     "Save information": "保存信息",
     //News
-    
+
     //通知
     "A project you follow": "您关注的项目",
     "has been updated": "已更新",
     "Received": "收到",
     "View": "查看",
     "more notifications": "更多通知",
-    
+    Subscribe: "订阅",
+    "Subscribe to the Modrinth newsletter": "订阅 Modrinth 新闻",
+    "RSS feed": "RSS 订阅",
+     
     //404
     "Page not found": "页面未找到",
     "The page you were looking for doesn't seem to exist.": "您正在寻找的页面似乎不存在。",
