@@ -711,14 +711,14 @@
     //通知
     "A project you follow": "您关注的项目",
     "has been updated": "已更新",
-    "Received": "收到",
-    "View": "查看",
+    Received: "收到",
+    View: "查看",
     "more notifications": "更多通知",
-
 
     //404
     "Page not found": "页面未找到",
-    "The page you were looking for doesn't seem to exist.": "您正在寻找的页面似乎不存在。",
+    "The page you were looking for doesn't seem to exist.":
+      "您正在寻找的页面似乎不存在。",
     "You may have mistyped the project's URL.": "您可能输入了项目的错误 URL。",
     "The project's owner may have changed the URL, made the project private, or deleted it.":
       "项目的所有者可能已更改 URL、将项目设为私有或删除了它。",
