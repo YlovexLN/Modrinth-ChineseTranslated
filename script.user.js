@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Modrinth-ChineseTranslated
 // @namespace    http://tampermonkey.net/
-// @version      0.2.3
+// @version      0.2.4
 // @description  一个汉化Modrinth网页的的脚本，将 Modrinth 网站的内容翻译成中文。
 // @author       YlovexLN
 // @match        https://modrinth.com/*
@@ -45,6 +45,8 @@
     "Saved projects": "保存的项目",
     "My servers": "我的服务器",
     Notifications: "通知",
+    from: "来自",
+    project: "项目",
     Revenue: "收入",
     Analytics: "分析",
     "Sign out": "登出",
@@ -117,6 +119,7 @@
     Resources: "资源",
     Support: "支持",
     About: "关于",
+    News: "新闻",
     Blog: "博客",
     Docs: "文档",
     Status: "状态",
@@ -699,6 +702,16 @@
     "Enter your Venmo username below to enable withdrawing to your Venmo balance.":
       "在下方输入您的 Venmo 用户名以启用提现到您的 Venmo 余额。",
     "Save information": "保存信息",
+    //通知
+    "A project you follow": "您关注的项目",
+    "has been updated": "已更新",
+    "Received": "收到",
+    "View": "查看",
+    "more notifications": "更多通知",
+    
+    //404
+    "Page not found": "页面未找到",
+    "The page you were looking for doesn't seem to exist.": "您正在寻找的页面似乎不存在。",
     // 遍历页面内容并替换为翻译
   };
 
