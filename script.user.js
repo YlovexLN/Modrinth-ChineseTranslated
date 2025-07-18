@@ -702,6 +702,8 @@
     "Enter your Venmo username below to enable withdrawing to your Venmo balance.":
       "在下方输入您的 Venmo 用户名以启用提现到您的 Venmo 余额。",
     "Save information": "保存信息",
+    //News
+    
     //通知
     "A project you follow": "您关注的项目",
     "has been updated": "已更新",
@@ -712,6 +714,11 @@
     //404
     "Page not found": "页面未找到",
     "The page you were looking for doesn't seem to exist.": "您正在寻找的页面似乎不存在。",
+    "You may have mistyped the project's URL.": "您可能输入了项目的错误 URL。",
+    "The project's owner may have changed the URL, made the project private, or deleted it.":
+      "项目的所有者可能已更改 URL、将项目设为私有或删除了它。",
+    "The project may have been taken down by Modrinth's moderation team for violating our Terms of Use.":
+      "Modrinth 的审核团队可能已采取措施违反了我们的使用条款。",
     // 遍历页面内容并替换为翻译
   };
 
