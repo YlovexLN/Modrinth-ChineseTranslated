@@ -706,7 +706,8 @@
     Subscribe: "订阅",
     "Subscribe to the Modrinth newsletter": "订阅 Modrinth 新闻",
     "RSS feed": "RSS 订阅",
-    
+    "More articles": "更多文章",
+
     //通知
     "A project you follow": "您关注的项目",
     "has been updated": "已更新",
