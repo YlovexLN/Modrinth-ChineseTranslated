@@ -1,3 +1,12 @@
+# 官网已经支持简体中文，故此项目归档。
+
+最近发现官网账号设置里有切换语言的功能，里面能选择简体中文但是并不是很完善。
+总体来说肯定是比使用扩展方便好用的，等后面慢慢完善就行。
+
+翻译项目地址：
+https://zh.crowdin.com/project/modrinth-platform
+
+
 # Modrinth-ChineseTranslated
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github&labelColor=000000&color=%23555555)](https://github.com/YlovexLN/Modrinth-ChineseTranslated)
